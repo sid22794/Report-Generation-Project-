@@ -35,7 +35,7 @@ MongoClient.connect(url,{ useNewUrlParser: true },function(err, client){
         let dbName = "project385";
         let db = client.db(dbName);
         let collection = db.collection('reports');
-        collection.findOne((req.query),function(err, docs){    
+        collection.findOne((req.query),function(err, docs){     
             console.log("search done");
            console.log(docs);
     
